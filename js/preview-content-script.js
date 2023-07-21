@@ -14,7 +14,7 @@ var ogData = {
   description: descriptionElement?.content || ogDescriptionElement?.content || '',
   imageUrl: completeUrl(ogImageElement?.content) || 'css/placeholder.svg',
   canonical: completeUrl(canonicalElement ? canonicalElement.href : document.location.href),
-  language: htmlElement?.lang || ''
+  language: htmlElement?.lang || navigator.language || 'en'
 };
 var gFav = new URL('https://encrypted-tbn0.gstatic.com/faviconV2?url=https://www.google.com&client=NEWS_360&size=48&type=FAVICON&fallback_opts=TYPE,SIZE,URL');
 var u = new URL(document.location.href);

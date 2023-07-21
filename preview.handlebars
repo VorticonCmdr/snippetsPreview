@@ -1,0 +1,45 @@
+{{#if square}}
+<div>
+  <span class="card discover-card">
+    <div class="card-body">
+      <div class="row" style="justify-content: space-between;">
+        <div class="col-8">
+          <h2 class="card-title discover-square-card-title">{{this.title}}</h2>
+        </div>
+        <div class="col-auto">
+          <img src="{{{this.imageUrl}}}" class="float-end discover-card-small-img rounded">
+        </div>
+      </div>
+      <p class="float-start discover-card-infos">
+        <img src="{{{this.favicon}}}" class="discover-card-favicon">
+        <small class="text-muted discover-card-infos-text">{{this.publisher}}</small>
+        <small class="text-muted discover-card-infos-text">{{ago this.datePublished}}</small>
+      </p>
+      <div class="discover-card-infos float-end">
+        <i class="bi bi-heart small ms-3"></i>
+        <i class="bi bi-share small ms-3"></i>
+        <i class="bi bi-three-dots-vertical small ms-3"></i>
+      </div>
+    </div>
+  </span>
+</div>
+{{else}}
+<div>
+  <span class="card discover-card">
+    <img src="{{{this.imageUrl}}}" class="card-img-top discover-card-big-img">
+    <div class="card-body">
+      <h2 class="card-title discover-big-card-title">{{this.title}}</h2>
+      <p class="float-start discover-card-infos">
+        <img src="{{{this.favicon}}}" class="discover-card-favicon">
+        <small class="text-muted discover-card-infos-text">{{this.publisher}}</small>
+        <small class="text-muted discover-card-infos-text">{{ago this.datePublished}}</small>
+      </p>
+      <div class="discover-card-infos float-end">
+        <i class="bi bi-heart small ms-3"></i>
+        <i class="bi bi-share small ms-3"></i>
+        <i class="bi bi-three-dots-vertical small ms-3"></i>
+      </div>
+    </div>
+  </span>
+</div>
+{{/if}}
