@@ -1,6 +1,6 @@
 {
-  "version": "0.0.0.1",
-  "version_name": "0.0.0.1 prerelease",
+  "version": "0.0.0.2",
+  "version_name": "0.0.0.2",
   "name": "snippetsPreview",
   "description": "generates a simple preview of what your Google Discover snippet and simple mobile Search result snippet might look like.",
   "manifest_version": 3,
