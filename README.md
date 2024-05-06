@@ -1,1 +1,2 @@
 # snippetsPreview Chrome extension
+# snippetsPreview
