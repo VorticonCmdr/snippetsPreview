@@ -6,4 +6,4 @@
 - npm run build:replica-small (etc.) — einzeln
 - 
 ## zip chrome extension
-zip -r snippetsPreview-v1.0.0.0.zip ./snippetsPreview/ -x '*/.git/*' -x '*/.handlebars' -x '*/.DS_Store' -x '*/.gitignore' -x '*/*.md'
+zip -r snippetsPreview-v1.0.0.0.zip ./snippetsPreview/ -x '*/.git/*' -x '*/*.handlebars' -x '*/.DS_Store' -x '*/.gitignore' -x '*/*.md' -x '*/.gemini/*' -x '*/node_modules/*' -x '*/package*'
