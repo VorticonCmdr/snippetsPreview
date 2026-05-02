@@ -21,6 +21,12 @@ var u = new URL(document.location.href);
 gFav.searchParams.set('url', u.origin);
 ogData['favicon'] = gFav.href;
 
+try {
+  ogData['origin'] = new URL(ogData.canonical).origin;
+} catch (e) {
+  ogData['origin'] = '';
+}
+
 function completeUrl(uri) {
   if (uri === undefined) {
     return uri;
@@ -61,16 +67,6 @@ function getValues(obj, key) {
   }
   return objects;
 }
-
-var img = new Image();
-img.onload = function(){
-  var height = img.height;
-  var width = img.width;
-
-  ogData['square'] = (height == width);
-  console.log(ogData);
-}
-img.src = ogImageElement?.content;
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {

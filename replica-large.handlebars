@@ -1,0 +1,25 @@
+<div class="search-result layout-large-vertical">
+  <a class="result-link" href="{{{this.canonical}}}">
+    <div class="thumbnail-container-wide">
+      <img class="thumbnail-wide" src="{{{this.imageUrl}}}" alt="">
+      {{#if this.live}}<div class="live-badge">LIVE</div>{{/if}}
+    </div>
+    <div class="info-container-padded">
+      <div class="source-header">
+        <div class="source-info">
+          <img class="favicon" src="{{{this.favicon}}}" alt="">
+          <span class="source-name">{{this.publisher}}</span>
+        </div>
+        <div class="more-icon">
+          <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+          </svg>
+        </div>
+      </div>
+      <h3 class="result-title-bold">{{this.title}}</h3>
+      <div class="result-meta-bottom">
+        <span class="date">{{ago this.datePublished}}</span>
+      </div>
+    </div>
+  </a>
+</div>

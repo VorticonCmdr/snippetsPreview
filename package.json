@@ -1,0 +1,18 @@
+{
+  "name": "snippets-preview",
+  "version": "0.0.0.2",
+  "private": true,
+  "description": "Build scripts for the snippetsPreview Chrome extension.",
+  "scripts": {
+    "build:preview": "handlebars preview.handlebars -f js/preview.precompiled.js",
+    "build:serp": "handlebars serp.handlebars -f js/serp.precompiled.js",
+    "build:replica-small": "handlebars replica-small.handlebars -f js/replica-small.precompiled.js",
+    "build:replica-large": "handlebars replica-large.handlebars -f js/replica-large.precompiled.js",
+    "build:replica-news": "handlebars replica-news.handlebars -f js/replica-news.precompiled.js",
+    "build:replica": "npm run build:replica-small && npm run build:replica-large && npm run build:replica-news",
+    "build": "npm run build:preview && npm run build:serp && npm run build:replica"
+  },
+  "devDependencies": {
+    "handlebars": "4.7.7"
+  }
+}

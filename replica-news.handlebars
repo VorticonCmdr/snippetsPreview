@@ -1,0 +1,22 @@
+<div class="search-result layout-news-badge">
+  <a class="result-link" href="{{{this.canonical}}}">
+    <div class="thumbnail-container-badge">
+      <img class="thumbnail-wide" src="{{{this.imageUrl}}}" alt="">
+      {{#if this.live}}<div class="live-badge">LIVE</div>{{/if}}
+    </div>
+    <div class="info-container-padded">
+      <div class="result-title-news">{{this.title}}</div>
+      <div class="result-meta-small">
+        <span class="date">{{ago this.datePublished}}</span>
+      </div>
+      <div class="source-footer">
+        <div class="source-info-small">
+          <div class="favicon-circle">
+            <img class="favicon-small" src="{{{this.favicon}}}" alt="">
+          </div>
+          <span class="source-name-small">{{this.publisher}}</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

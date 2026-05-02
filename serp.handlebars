@@ -1,44 +1,20 @@
-<div class="kvH3mc BToiNc UK95Uc">
-  <div class="Z26q7c UK95Uc jGGQ5e" style="">
-    <div class="P8ujBc v5yQqb jqWpsc">
-      <span id="link" class="cz3goc BmP5tf">
-        <div class="y0NFKc">
-          <div class="OSrXXb NJS5vf RNQ5ae">
-            <div class="d8lRkd OSrXXb WQnrNe MUxGbd lyLwlc aLF0Z">
-              <span class="yIn8Od">
-                <span class="isfEv">
-                  <span>
-                    <span class="H9lube">
-                      <div class="eqA2re NjwKYd Vwoesf">
-                        <img class="XNo5Ab" src="{{this.favicon}}" style="height:18px;width:18px" />
-                      </div>
-                    </span>
-                  </span>
-                </span>
-                <span class="wbJOMb">
-                  <span class="pKWwCd q8U8x zydFU">
-                    <div class="Aozhyc MUxGbd lyLwlc aLF0Z OSrXXb" style="color:#202124">
-                      <span class="BTu2cd">{{this.publisher}}</span>
-                    </div>
-                  </span>
-                  <span class="OSrXXb VN4UC">
-                    <span class="yKd8Hd qzEoUe">{{this.canonical}}</span>
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="oewGkc LeUQr MUxGbd v0nnCb" aria-level="3" role="heading">
-            <div id="headline" class="A9xod ynAwRc q8U8x MBeuO oewGkc LeUQr htnRc" role="link">{{this.titleTag}}</div>
-          </div>
-        </div>
-      </span>
+<div class="serp-result">
+  <div class="serp-header">
+    <div class="serp-favicon-wrap">
+      <img class="serp-favicon" src="{{{this.favicon}}}" alt="">
+    </div>
+    <div class="serp-source">
+      <div class="serp-publisher">{{this.publisher}}</div>
+      <div class="serp-url">{{this.origin}}</div>
+    </div>
+    <div class="serp-more">
+      <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+      </svg>
     </div>
   </div>
-
-  <div class="Z26q7c UK95Uc" style="margin-top:2px;margin-right:16px;margin-left:16px;margin-bottom:12px">
-    <div class="VwiC3b MUxGbd yDYNvb lEBKkf" style="-webkit-line-clamp:3">
-      <span class="MUxGbd wuQ4Ob WZ8Tjf"><span>{{ago this.datePublished}}</span> — </span>{{this.description}}
-    </div>
+  <a class="serp-headline" href="{{{this.canonical}}}">{{this.titleTag}}</a>
+  <div class="serp-description">
+    <span class="serp-date">{{ago this.datePublished}}</span> &mdash; {{this.description}}
   </div>
 </div>
