@@ -108,3 +108,5 @@ dist
 # other stuff
 *.raw
 *.old
+.DS_Store
+.gemini
